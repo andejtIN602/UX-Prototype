@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script> {% include main.js %} </script>
 <head>
     <meta charset="UTF-8">
-    <title><title>
-    <style></style>
+    <title></title>
+    <style>
+        {% include css/style.css %}
+    </style>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        {% include header.html %}
+    </header>
+    <main>
+        {% include attendance.html %}
+    </main>
+    <script>
+        {% include javascript.js %}
+    </script>
+    <footer>
+        {% include footer.html %}
+    </footer>
 </body>
+</html>

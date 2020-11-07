@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table {
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid #999;
+    padding: 3px 3px;
+}
+th {
+    border: 1px solid #999;
+    padding: 3px 3px;
+}
+td select {
+    border:none;
+}
+select {
+    padding: 3px 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <header>
+    
+</header>
+    </header>
+    <main>
+        <form>
+    <table>
+    <thead>
+        <tr>
+            <th>Student</th>
+            <th>Previous Attendance</th>
+            <th>Attendance</th>
+            <th>Stream</th>
+        </tr>
+    </thead>
+    <tbody id = "role">
+        <tr id = "sturole"></tr>
+        <tr id = "prevrole"></tr>
+        
+    </tbody>
+    </table>  
+</form>
+    </main>
+    <script>
+        $.ajax({
+    url: 'https://gist.githubusercontent.com/eallenOP/b40fa9bba517ff258da395c79edd2477/raw/a8175e0b5c915d9e2d857a2f114704094ade22b9/attendance.json',
+    dataType: 'json',
+    success: function(data) {
+    console.log(data);
+    var stream1r = "<td><input type ='radio' id='stream1' value='a'></input></td>";
+    var stream2r = "<td><input type ='radio' id='stream1' value='a'></input></td>";
+    var stream1 = "<td><button id='stream1' value='a'></button></td>";
+    var stream2 =  "<td><button id='stream2' value='b'></button></td>";
+    for (var i = 0; i < data.length; i++) {
+            $("#sturole").append("<tr><td>" + data[i].name.first + " " + data[i].name.last + "</td><td>" + data[i].attendance + "</td><td><select></select></td>" + stream1r + stream2r + "</tr>");
+            $('select').attr('id', 'class1');
+    }
+        $('select').append('<option>N/A</option>' + '<option>P</option>' + '<option>E</option>' + '<option>A</option>');
+        $('select').append('<option>N/A</option>' + '<option>P</option>' + '<option>E</option>' + '<option>A</option>');
+     }
+    });
+
+    </script>
+    <footer>
+        <footer>
+    
+</footer>
+    </footer>
+</body>
+</html>

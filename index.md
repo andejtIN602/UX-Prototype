@@ -1,6 +1,5 @@
 ---
-___
-layout: main.luquid
+layout: main.liquid
 title: Attendance Alpha
 ---
 Test
