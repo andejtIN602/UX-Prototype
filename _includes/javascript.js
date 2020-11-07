@@ -18,10 +18,12 @@ $.ajax({
                 $("#sturole").append("<tr><td>" + data[i].name.first + " " + data[i].name.last + tdstream + attendance + 
                 "<td id='pa1'>" + data[i].attendance[pc1] +"</td><td id='pa2'>"+ data[i].attendance[pc2] +"</td><td id='pa3'>"+ data[i].attendance[pc3] +
                 "</td><td id='pa4'>"+ data[i].attendance[pc4] +  "</td></tr>");
-               // if (pa1.innerHTML == 'a'){
-                //  console.log("check!")
-                //}
+                if (data[i].attendance[pc1] == 'a') {
+                    $('.pa1').addClass('.absent')
+                }
         }
+            
+        
     };
 }
 });
