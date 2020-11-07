@@ -5,7 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+.absent{
+    background-color: red;
+}
 
+.streamopt {
+    text-align: center;
+}
 
 
 tbody{
