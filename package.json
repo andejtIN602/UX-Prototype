@@ -1,0 +1,25 @@
+{
+  "name": "UX-Prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "liquid": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andejtIN602/UX-Prototype.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andejtIN602/UX-Prototype/issues"
+  },
+  "homepage": "https://github.com/andejtIN602/UX-Prototype#readme",
+  "description": ""
+}
